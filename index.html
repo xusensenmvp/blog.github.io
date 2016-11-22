@@ -167,7 +167,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -177,7 +177,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -230,6 +230,135 @@
             
               
                 
+                <a class="post-title-link" href="/hexo/2016/11/22/移动端总结/" itemprop="url">
+                  移动端总结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-11-22T13:30:08+08:00" content="2016-11-22">
+              2016-11-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/hexo/categories/html/" itemprop="url" rel="index">
+                    <span itemprop="name">html</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>meta基础知识<br>H5页面窗口自动调整到设备宽度，并禁止用户缩放页面<br>meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”</p>
+<p>忽略将页面中的数字识别为电话号码<br>meta name=”format-detection” content=”telephone=no”</p>
+<p>字体配置<br>html{font-size:10px}<br>@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}<br>@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}<br>@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}<br>@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}<br>@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}<br>@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}<br>@media screen and (min-width:800px){html{font-size:25px}}</p>
+<p>rem布局<br>使用js控制字体自适应</p>
+<p>body{height:100%;}</p>
+<p>移动端touch事件<br>以下支持webkit</p>
+<p>touchstart——当手指触碰屏幕时候发生。不管当前有多少只手指<br>touchmove——当手指在屏幕上滑动时连续触发。通常我们再滑屏页面，会调用event的preventDefault()可以阻止默认情况的发生：阻止页面滚动<br>touchend——当手指离开屏幕时触发<br>touchcancel——系统停止跟踪触摸时候会触发。例如在触摸过程中突然页面alert()一个提示框，此时会触发该事件，这个事件比较少用<br>TouchEvent</p>
+<p>touches：屏幕上所有手指的信息<br>targetTouches：手指在目标区域的手指信息<br>changedTouches：最近一次触发该事件的手指信息<br>touchend时，touches与targetTouches信息会被删除，changedTouches保存的最后一次的信息，最好用于计算手指信息<br>参数信息(changedTouches[0])</p>
+<p>clientX、clientY在显示区的坐标<br>target：当前元素</p>
+<p>参考：<a href="https://developer.mozilla.org/en-US/docs/web/API/TouchEve" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/web/API/TouchEve</a></p>
+<p>Retina 显示屏<br>前端的应对方案<br>设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2<br>图片宽高为：200px*200px<br>.css{width:100px;height:100px;background-size:100px 100px;}<br>其它元素的取值为原来的1/2，例如视觉稿40px的字体，使用样式的写法为20px</p>
+<p>webkit表单元素的默认外观怎么重置<br>.css{-webkit-appearance:none;}</p>
+<p>webkit表单输入框placeholder的颜色值能改变么<br>input::-webkit-input-placeholder{color:#AAAAAA;}<br>input:focus::-webkit-input-placeholder{color:#EEEEEE;}</p>
+<p>屏幕旋转的事件和样式<br>事件<br>window.orientation，取值：正负90表示横屏模式、0和180表现为竖屏模式；<br>window.onorientationchange = function(){<br>switch(window.orientation){<br>case -90:<br>case 90:<br>alert(“横屏:” + window.orientation);<br>case 0:<br>case 180:<br>alert(“竖屏:” + window.orientation);<br>break;<br>}<br>}</p>
+<p>竖屏时使用的样式<br>@media all and (orientation:portrait) {<br>.css{}<br>}</p>
+<p>横屏时使用的样式<br>@media all and (orientation:landscape) {<br>.css{}<br>}</p>
+<p>audio元素和video元素在ios和andriod中无法自动播放<br>应对方案：触屏即播<br>$(‘html’).one(‘touchstart’,function(){<br>audio.play()<br>})</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/hexo/2016/11/22/css3中的3D/" itemprop="url">
                   css中的3D
                 </a>
@@ -243,7 +372,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-11-22T11:23:17+08:00" content="2016-11-22">
               2016-11-22
             </time>
@@ -255,7 +384,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/hexo/categories/css/" itemprop="url" rel="index">
@@ -293,12 +422,12 @@
       
         
           
-            <p>一、必不可少的perspective属性。<br>perspective的中文意思是：透视，视角！<br>perspective属性的存在与否决定了你所看到的是2次元的还是3次元的，也就是是2D transform还是3D transform. 这不难理解，没有透视，不成3D.</p>
-<p>二、translateZ帮你寻找透视位置<br>设置的translateZ值越小，则子元素大小越小（因为元素远去，我们眼睛看到的就会变小）；translateZ值越大，该元素也会越来越大.</p>
-<p>三、perspective属性的两种书写<br>.stage {<br>    perspective: 600px;<br>}</p>
+            <p>##一、必不可少的perspective属性。<br>perspective的中文意思是：透视，视角！<br>perspective属性的存在与否决定了你所看到的是2次元的还是3次元的，也就是是2D transform还是3D transform. 这不难理解，没有透视，不成3D.</p>
+<p>##二、translateZ帮你寻找透视位置<br>设置的translateZ值越小，则子元素大小越小（因为元素远去，我们眼睛看到的就会变小）；translateZ值越大，该元素也会越来越大.</p>
+<p>##三、perspective属性的两种书写<br>.stage {<br>    perspective: 600px;<br>}</p>
 <p>#stage .box {<br>    transform: perspective(600px) rotateY(45deg);<br>}</p>
-<p>四、转换属性<br>transform    向元素应用 2D 或 3D 转换<br>transform-origin    允许你改变被转换元素的位置。<br>transform-style    规定被嵌套元素如何在 3D 空间中显示。<br>perspective    规定 3D 元素的透视效果。<br>perspective-origin    规定 3D 元素的底部位置。<br>backface-visibility    定义元素在不面对屏幕时是否可见。</p>
-<p>五、<br>translate3d(x,y,z)    定义 3D 转化。<br>translateX(x)    定义 3D 转化，仅使用用于 X 轴的值。<br>translateY(y)    定义 3D 转化，仅使用用于 Y 轴的值。<br>translateZ(z)    定义 3D 转化，仅使用用于 Z 轴的值。<br>scale3d(x,y,z)    定义 3D 缩放转换。<br>scaleX(x)    定义 3D 缩放转换，通过给定一个 X 轴的值。<br>scaleY(y)    定义 3D 缩放转换，通过给定一个 Y 轴的值。<br>scaleZ(z)    定义 3D 缩放转换，通过给定一个 Z 轴的值。<br>rotate3d(x,y,z,angle)    定义 3D 旋转。<br>rotateX(angle)    定义沿 X 轴的 3D 旋转。<br>rotateY(angle)    定义沿 Y 轴的 3D 旋转。<br>rotateZ(angle)    定义沿 Z 轴的 3D 旋转。<br>perspective(n)    定义 3D 转换元素的透视视图。</p>
+<p>##四、转换属性<br>transform    向元素应用 2D 或 3D 转换<br>transform-origin    允许你改变被转换元素的位置。<br>transform-style    规定被嵌套元素如何在 3D 空间中显示。<br>perspective    规定 3D 元素的透视效果。<br>perspective-origin    规定 3D 元素的底部位置。<br>backface-visibility    定义元素在不面对屏幕时是否可见。</p>
+<p>##五、<br>translate3d(x,y,z)    定义 3D 转化。<br>translateX(x)    定义 3D 转化，仅使用用于 X 轴的值。<br>translateY(y)    定义 3D 转化，仅使用用于 Y 轴的值。<br>translateZ(z)    定义 3D 转化，仅使用用于 Z 轴的值。<br>scale3d(x,y,z)    定义 3D 缩放转换。<br>scaleX(x)    定义 3D 缩放转换，通过给定一个 X 轴的值。<br>scaleY(y)    定义 3D 缩放转换，通过给定一个 Y 轴的值。<br>scaleZ(z)    定义 3D 缩放转换，通过给定一个 Z 轴的值。<br>rotate3d(x,y,z,angle)    定义 3D 旋转。<br>rotateX(angle)    定义沿 X 轴的 3D 旋转。<br>rotateY(angle)    定义沿 Y 轴的 3D 旋转。<br>rotateZ(angle)    定义沿 Z 轴的 3D 旋转。<br>perspective(n)    定义 3D 转换元素的透视视图。</p>
 
           
         
@@ -368,16 +497,16 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/hexo/archives">
-              <span class="site-state-item-count">1</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           
@@ -385,8 +514,8 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/hexo/tags">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -450,7 +579,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
