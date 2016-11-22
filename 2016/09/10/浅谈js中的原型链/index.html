@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/09/10/浅谈js中的原型链/index.html">
 <meta property="og:site_name" content="xusenBlog">
 <meta property="og:description" content="JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有proto属性。那原型对象是">
-<meta property="og:updated_time" content="2016-11-22T06:24:46.243Z">
+<meta property="og:updated_time" content="2016-11-22T06:46:19.675Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈js中的原型链">
 <meta name="twitter:description" content="JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有proto属性。那原型对象是">
@@ -290,8 +290,7 @@
       
 
       
-        <p>JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。<br>凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。<br>在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有<strong>proto</strong>属性。<br>那原型对象是用来做什么的呢？主要作用是用于继承。举了例子：<br>  var person = function(name){<br>   this.name = name<br>  };<br>  person.prototype.getName = function(){<br>     return this.name;<br>  }<br>  var zjh = new person(‘zhangjiahao’);<br>  zjh.getName(); //zhangjiahao<br>  原型链的指向<br>  普通对象的<strong>proto</strong>指向函数对象的prototype，<br>  函数对象的prototype.<strong>proto</strong>指向Object.prototype.<strong>proto_，<br>  Object.prototype.</strong>proto_指向null；<br>  这一过程串联起来叫做原型链。</p>
-
+        <blockquote class="blockquote-center">JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。<br>凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。<br>在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有<strong>proto</strong>属性。<br>那原型对象是用来做什么的呢？主要作用是用于继承。举了例子：<br>  var person = function(name){<br>   this.name = name<br>  };<br>  person.prototype.getName = function(){<br>     return this.name;<br>  }<br>  var zjh = new person(‘zhangjiahao’);<br>  zjh.getName(); //zhangjiahao<br>  原型链的指向<br>  普通对象的<strong>proto</strong>指向函数对象的prototype，<br>  函数对象的prototype.<strong>proto</strong>指向Object.prototype.<strong>proto_，<br>  Object.prototype.</strong>proto_指向null；<br>  这一过程串联起来叫做原型链。</blockquote>
       
     </div>
 

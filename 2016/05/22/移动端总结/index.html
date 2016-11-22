@@ -84,19 +84,16 @@
 
 
 
-<meta name="description" content="meta基础知识H5页面窗口自动调整到设备宽度，并禁止用户缩放页面meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”
-忽略将页面中的数字识别为电话号码meta name=”format-detection” c">
+<meta name="description" content="meta基础知识H5页面窗口自动调整到设备宽度，并禁止用户缩放页面meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”忽略将页面中的数字识别为电话号码meta name=”format-detection” co">
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动端总结">
 <meta property="og:url" content="http://yoursite.com/2016/05/22/移动端总结/index.html">
 <meta property="og:site_name" content="xusenBlog">
-<meta property="og:description" content="meta基础知识H5页面窗口自动调整到设备宽度，并禁止用户缩放页面meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”
-忽略将页面中的数字识别为电话号码meta name=”format-detection” c">
-<meta property="og:updated_time" content="2016-11-22T05:39:04.991Z">
+<meta property="og:description" content="meta基础知识H5页面窗口自动调整到设备宽度，并禁止用户缩放页面meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”忽略将页面中的数字识别为电话号码meta name=”format-detection” co">
+<meta property="og:updated_time" content="2016-11-22T06:46:47.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动端总结">
-<meta name="twitter:description" content="meta基础知识H5页面窗口自动调整到设备宽度，并禁止用户缩放页面meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”
-忽略将页面中的数字识别为电话号码meta name=”format-detection” c">
+<meta name="twitter:description" content="meta基础知识H5页面窗口自动调整到设备宽度，并禁止用户缩放页面meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”忽略将页面中的数字识别为电话号码meta name=”format-detection” co">
 
 
 
@@ -293,24 +290,7 @@
       
 
       
-        <p>meta基础知识<br>H5页面窗口自动调整到设备宽度，并禁止用户缩放页面<br>meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”</p>
-<p>忽略将页面中的数字识别为电话号码<br>meta name=”format-detection” content=”telephone=no”</p>
-<p>字体配置<br>html{font-size:10px}<br>@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}<br>@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}<br>@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}<br>@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}<br>@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}<br>@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}<br>@media screen and (min-width:800px){html{font-size:25px}}</p>
-<p>rem布局<br>使用js控制字体自适应</p>
-<p>body{height:100%;}</p>
-<p>移动端touch事件<br>以下支持webkit</p>
-<p>touchstart——当手指触碰屏幕时候发生。不管当前有多少只手指<br>touchmove——当手指在屏幕上滑动时连续触发。通常我们再滑屏页面，会调用event的preventDefault()可以阻止默认情况的发生：阻止页面滚动<br>touchend——当手指离开屏幕时触发<br>touchcancel——系统停止跟踪触摸时候会触发。例如在触摸过程中突然页面alert()一个提示框，此时会触发该事件，这个事件比较少用<br>TouchEvent</p>
-<p>touches：屏幕上所有手指的信息<br>targetTouches：手指在目标区域的手指信息<br>changedTouches：最近一次触发该事件的手指信息<br>touchend时，touches与targetTouches信息会被删除，changedTouches保存的最后一次的信息，最好用于计算手指信息<br>参数信息(changedTouches[0])</p>
-<p>clientX、clientY在显示区的坐标<br>target：当前元素</p>
-<p>参考：<a href="https://developer.mozilla.org/en-US/docs/web/API/TouchEve" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/web/API/TouchEve</a></p>
-<p>Retina 显示屏<br>前端的应对方案<br>设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2<br>图片宽高为：200px*200px<br>.css{width:100px;height:100px;background-size:100px 100px;}<br>其它元素的取值为原来的1/2，例如视觉稿40px的字体，使用样式的写法为20px</p>
-<p>webkit表单元素的默认外观怎么重置<br>.css{-webkit-appearance:none;}</p>
-<p>webkit表单输入框placeholder的颜色值能改变么<br>input::-webkit-input-placeholder{color:#AAAAAA;}<br>input:focus::-webkit-input-placeholder{color:#EEEEEE;}</p>
-<p>屏幕旋转的事件和样式<br>事件<br>window.orientation，取值：正负90表示横屏模式、0和180表现为竖屏模式；<br>window.onorientationchange = function(){<br>switch(window.orientation){<br>case -90:<br>case 90:<br>alert(“横屏:” + window.orientation);<br>case 0:<br>case 180:<br>alert(“竖屏:” + window.orientation);<br>break;<br>}<br>}</p>
-<p>竖屏时使用的样式<br>@media all and (orientation:portrait) {<br>.css{}<br>}</p>
-<p>横屏时使用的样式<br>@media all and (orientation:landscape) {<br>.css{}<br>}</p>
-<p>audio元素和video元素在ios和andriod中无法自动播放<br>应对方案：触屏即播<br>$(‘html’).one(‘touchstart’,function(){<br>audio.play()<br>})</p>
-
+        <blockquote class="blockquote-center">meta基础知识<br>H5页面窗口自动调整到设备宽度，并禁止用户缩放页面<br>meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no”<br><br>忽略将页面中的数字识别为电话号码<br>meta name=”format-detection” content=”telephone=no”<br><br>字体配置<br>html{font-size:10px}<br>@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}<br>@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}<br>@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}<br>@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}<br>@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}<br>@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}<br>@media screen and (min-width:800px){html{font-size:25px}}<br><br>rem布局<br>使用js控制字体自适应<br><br>body{height:100%;}<br><br>移动端touch事件<br>以下支持webkit<br><br>touchstart——当手指触碰屏幕时候发生。不管当前有多少只手指<br>touchmove——当手指在屏幕上滑动时连续触发。通常我们再滑屏页面，会调用event的preventDefault()可以阻止默认情况的发生：阻止页面滚动<br>touchend——当手指离开屏幕时触发<br>touchcancel——系统停止跟踪触摸时候会触发。例如在触摸过程中突然页面alert()一个提示框，此时会触发该事件，这个事件比较少用<br>TouchEvent<br><br>touches：屏幕上所有手指的信息<br>targetTouches：手指在目标区域的手指信息<br>changedTouches：最近一次触发该事件的手指信息<br>touchend时，touches与targetTouches信息会被删除，changedTouches保存的最后一次的信息，最好用于计算手指信息<br>参数信息(changedTouches[0])<br><br>clientX、clientY在显示区的坐标<br>target：当前元素<br><br>参考：<a href="https://developer.mozilla.org/en-US/docs/web/API/TouchEve" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/web/API/TouchEve</a><br><br>Retina 显示屏<br>前端的应对方案<br>设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2<br>图片宽高为：200px*200px<br>.css{width:100px;height:100px;background-size:100px 100px;}<br>其它元素的取值为原来的1/2，例如视觉稿40px的字体，使用样式的写法为20px<br><br>webkit表单元素的默认外观怎么重置<br>.css{-webkit-appearance:none;}<br><br><br>webkit表单输入框placeholder的颜色值能改变么<br>input::-webkit-input-placeholder{color:#AAAAAA;}<br>input:focus::-webkit-input-placeholder{color:#EEEEEE;}<br><br>屏幕旋转的事件和样式<br>事件<br>window.orientation，取值：正负90表示横屏模式、0和180表现为竖屏模式；<br>window.onorientationchange = function(){<br>switch(window.orientation){<br>case -90:<br>case 90:<br>alert(“横屏:” + window.orientation);<br>case 0:<br>case 180:<br>alert(“竖屏:” + window.orientation);<br>break;<br>}<br>}<br><br>竖屏时使用的样式<br>@media all and (orientation:portrait) {<br>.css{}<br>}<br><br>横屏时使用的样式<br>@media all and (orientation:landscape) {<br>.css{}<br>}<br><br>audio元素和video元素在ios和andriod中无法自动播放<br>应对方案：触屏即播<br>$(‘html’).one(‘touchstart’,function(){<br>audio.play()<br>})</blockquote>
       
     </div>
 
