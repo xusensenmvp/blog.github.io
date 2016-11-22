@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/09/10/浅谈js中的原型链/index.html">
 <meta property="og:site_name" content="xusenBlog">
 <meta property="og:description" content="JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有proto属性。那原型对象是">
-<meta property="og:updated_time" content="2016-11-22T06:46:19.675Z">
+<meta property="og:updated_time" content="2016-11-22T06:48:42.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈js中的原型链">
 <meta name="twitter:description" content="JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有proto属性。那原型对象是">
@@ -105,8 +105,8 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
-      author: 'Author'
+      userId: 123456,
+      author: 'xusen'
     }
   };
 </script>
@@ -169,7 +169,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -179,7 +179,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -242,7 +242,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-09-10T14:18:55+08:00" content="2016-09-10">
               2016-09-10
             </time>
@@ -254,7 +254,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/hexo/categories/js/" itemprop="url" rel="index">
@@ -290,7 +290,8 @@
       
 
       
-        <blockquote class="blockquote-center">JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。<br>凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。<br>在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有<strong>proto</strong>属性。<br>那原型对象是用来做什么的呢？主要作用是用于继承。举了例子：<br>  var person = function(name){<br>   this.name = name<br>  };<br>  person.prototype.getName = function(){<br>     return this.name;<br>  }<br>  var zjh = new person(‘zhangjiahao’);<br>  zjh.getName(); //zhangjiahao<br>  原型链的指向<br>  普通对象的<strong>proto</strong>指向函数对象的prototype，<br>  函数对象的prototype.<strong>proto</strong>指向Object.prototype.<strong>proto_，<br>  Object.prototype.</strong>proto_指向null；<br>  这一过程串联起来叫做原型链。</blockquote>
+        <p>JavaScript 中,分为普通对象和函数对象，Object ，Function ,普通对象和函数对象。<br>凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象。<br>在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。普通对象没有prototype,但有<strong>proto</strong>属性。<br>那原型对象是用来做什么的呢？主要作用是用于继承。举了例子：<br>  var person = function(name){<br>   this.name = name<br>  };<br>  person.prototype.getName = function(){<br>     return this.name;<br>  }<br>  var zjh = new person(‘zhangjiahao’);<br>  zjh.getName(); //zhangjiahao<br>  原型链的指向<br>  普通对象的<strong>proto</strong>指向函数对象的prototype，<br>  函数对象的prototype.<strong>proto</strong>指向Object.prototype.<strong>proto_，<br>  Object.prototype.</strong>proto_指向null；<br>  这一过程串联起来叫做原型链。</p>
+
       
     </div>
 
@@ -379,10 +380,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -399,7 +400,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/hexo/archives">
               <span class="site-state-item-count">7</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -407,7 +408,7 @@
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           
@@ -416,7 +417,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/hexo/tags">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -464,7 +465,7 @@
               
             
             
-              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
         </section>
@@ -491,7 +492,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
