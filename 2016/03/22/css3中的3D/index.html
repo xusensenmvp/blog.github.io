@@ -68,7 +68,7 @@
 <link href="/hexo/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="css," />
 
 
 
@@ -84,12 +84,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="xusenBlog">
-<meta property="og:url" content="http://yoursite.com/tags/html/index.html">
+<meta name="description" content="一、必不可少的perspective属性。perspective的中文意思是：透视，视角！perspective属性的存在与否决定了你所看到的是2次元的还是3次元的，也就是是2D transform还是3D transform. 这不难理解，没有透视，不成3D.
+二、translateZ帮你寻找透视位置设置的translateZ值越小，则子元素大小越小（因为元素远去，我们眼睛看到的就会变小）；tr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css中的3D">
+<meta property="og:url" content="http://yoursite.com/2016/03/22/css3中的3D/index.html">
 <meta property="og:site_name" content="xusenBlog">
+<meta property="og:description" content="一、必不可少的perspective属性。perspective的中文意思是：透视，视角！perspective属性的存在与否决定了你所看到的是2次元的还是3次元的，也就是是2D transform还是3D transform. 这不难理解，没有透视，不成3D.
+二、translateZ帮你寻找透视位置设置的translateZ值越小，则子元素大小越小（因为元素远去，我们眼睛看到的就会变小）；tr">
+<meta property="og:updated_time" content="2016-11-22T05:38:57.690Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xusenBlog">
+<meta name="twitter:title" content="css中的3D">
+<meta name="twitter:description" content="一、必不可少的perspective属性。perspective的中文意思是：透视，视角！perspective属性的存在与否决定了你所看到的是2次元的还是3次元的，也就是是2D transform还是3D transform. 这不难理解，没有透视，不成3D.
+二、translateZ帮你寻找透视位置设置的translateZ值越小，则子元素大小越小（因为元素远去，我们眼睛看到的就会变小）；tr">
 
 
 
@@ -107,7 +114,7 @@
   };
 </script>
 
-  <title> Tag: html | xusenBlog </title>
+  <title> css中的3D | xusenBlog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -128,7 +135,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -206,46 +213,145 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        html
-        <small>Tag</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                css中的3D
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-03-22T11:23:17+08:00" content="2016-03-22">
+              2016-03-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/hexo/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>一、必不可少的perspective属性。<br>perspective的中文意思是：透视，视角！<br>perspective属性的存在与否决定了你所看到的是2次元的还是3次元的，也就是是2D transform还是3D transform. 这不难理解，没有透视，不成3D.</p>
+<p>二、translateZ帮你寻找透视位置<br>设置的translateZ值越小，则子元素大小越小（因为元素远去，我们眼睛看到的就会变小）；translateZ值越大，该元素也会越来越大.</p>
+<p>三、perspective属性的两种书写<br>.stage {<br>    perspective: 600px;<br>}</p>
+<p>#stage .box {<br>    transform: perspective(600px) rotateY(45deg);<br>}</p>
+<p>四、转换属性<br>transform    向元素应用 2D 或 3D 转换<br>transform-origin    允许你改变被转换元素的位置。<br>transform-style    规定被嵌套元素如何在 3D 空间中显示。<br>perspective    规定 3D 元素的透视效果。<br>perspective-origin    规定 3D 元素的底部位置。<br>backface-visibility    定义元素在不面对屏幕时是否可见。</p>
+<p>五、<br>translate3d(x,y,z)    定义 3D 转化。<br>translateX(x)    定义 3D 转化，仅使用用于 X 轴的值。<br>translateY(y)    定义 3D 转化，仅使用用于 Y 轴的值。<br>translateZ(z)    定义 3D 转化，仅使用用于 Z 轴的值。<br>scale3d(x,y,z)    定义 3D 缩放转换。<br>scaleX(x)    定义 3D 缩放转换，通过给定一个 X 轴的值。<br>scaleY(y)    定义 3D 缩放转换，通过给定一个 Y 轴的值。<br>scaleZ(z)    定义 3D 缩放转换，通过给定一个 Z 轴的值。<br>rotate3d(x,y,z,angle)    定义 3D 旋转。<br>rotateX(angle)    定义沿 X 轴的 3D 旋转。<br>rotateY(angle)    定义沿 Y 轴的 3D 旋转。<br>rotateZ(angle)    定义沿 Z 轴的 3D 旋转。<br>perspective(n)    定义 3D 转换元素的透视视图。</p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/hexo/2016/05/22/移动端总结/" itemprop="url">
-              
-                <span itemprop="name">移动端总结</span>
-              
-            </a>
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-22T13:30:08+08:00"
-              content="2016-05-22" >
-          05-22
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/hexo/tags/css/" rel="tag">#css</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/hexo/2016/05/22/移动端总结/" rel="prev" title="移动端总结">
+                移动端总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -253,6 +359,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -272,8 +382,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/hexo/images/lufei.jpg"
@@ -343,6 +462,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -439,6 +569,10 @@
   
 
   
+  <script type="text/javascript" src="/hexo/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/hexo/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
